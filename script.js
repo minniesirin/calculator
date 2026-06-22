@@ -5,6 +5,19 @@ function addToDisplay(x){
     display.focus()
 }
 
+function addParen(){
+    let cur = display.value
+    let open = cur.match(/\(/g)
+    let close = cur.match(/\)/g)
+
+    if(open === close){
+        display.value += "("
+    }
+    else{
+        display.value += ")"
+    }
+}
+
 function delDisplay(){
     let st = display.selectionStart
     let en = display.selectionEnd
