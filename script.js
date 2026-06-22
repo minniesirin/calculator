@@ -45,3 +45,10 @@ function delDisplay(){
 function clearDisplay(){
     display.value = ""
 }
+
+function showResult(){
+    const eq = display.value
+    const res = eval(eq)
+    
+    display.value = res
+}
