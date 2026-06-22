@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
@@ -12,26 +13,26 @@
             <input id="display" type="text">
 
             <div id="numpad">
-                <button class="btn op-btn">+</button>
-                <button class="btn op-btn">-</button>
-                <button class="btn op-btn">*</button>
-                <button class="btn op-btn">/</button>
+                <button class="btn op-btn" onclick="addToDisplay('+')">+</button>
+                <button class="btn op-btn" onclick="addToDisplay('-')">-</button>
+                <button class="btn op-btn" onclick="addToDisplay('*')">*</button>
+                <button class="btn op-btn" onclick="addToDisplay('/')">/</button>
                 
-                <button class="btn num-btn">7</button>
-                <button class="btn num-btn">8</button>
-                <button class="btn num-btn">9</button>
-                <button class="btn eq-btn">=</button>
+                <button class="btn num-btn" onclick="addToDisplay('7')">7</button>
+                <button class="btn num-btn" onclick="addToDisplay('8')">8</button>
+                <button class="btn num-btn" onclick="addToDisplay('9')">9</button>
+                <button class="btn eq-btn" onclick="addToDisplay('=')">=</button>
 
-                <button class="btn num-btn">6</button>
-                <button class="btn num-btn">5</button>
-                <button class="btn num-btn">4</button>
+                <button class="btn num-btn" onclick="addToDisplay('6')">6</button>
+                <button class="btn num-btn" onclick="addToDisplay('5')">5</button>
+                <button class="btn num-btn" onclick="addToDisplay('4')">4</button>
 
-                <button class="btn num-btn">3</button>
-                <button class="btn num-btn">2</button>
-                <button class="btn num-btn">1</button>
+                <button class="btn num-btn" onclick="addToDisplay('3')">3</button>
+                <button class="btn num-btn" onclick="addToDisplay('2')">2</button>
+                <button class="btn num-btn" onclick="addToDisplay('1')">1</button>
 
-                <button class="btn op-btn">.</button>
-                <button class="btn num-btn">0</button>
+                <button class="btn op-btn" onclick="addToDisplay('.')">.</button>
+                <button class="btn num-btn" onclick="addToDisplay('0')">0</button>
                 <button class="btn op-btn">()</button>
             </div>
         </div>
