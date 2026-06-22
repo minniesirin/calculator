@@ -7,8 +7,8 @@ function addToDisplay(x){
 
 function addParen(){
     let cur = display.value
-    let open = cur.match(/\(/g)
-    let close = cur.match(/\)/g)
+    let open = cur.match(/\(/g) ? cur.match(/\(/g).length :  0
+    let close = cur.match(/\)/g) ? cur.match(/\)/g).length : 0
 
     if(open === close){
         display.value += "("
